@@ -25,7 +25,7 @@ NotSupportedTypeException|当所属类型不支持时需要抛出的异常（Exc
 ---
 ## 简易教学（Simple Teaching）
 
-这个类常用于远程访问某个地址，或者调用本地程序集的接口，在使用这个类之前，说先要进行单例化：
+这个类常用于远程访问某个地址，或者调用本地程序集的接口，在使用这个类之前，首先要进行单例化（This class is often used to remotely access an address or call the interface of a local assembly. Before using this class, you need to implement a singleton；このクラスはリモートであるアドレスにアクセスするためによく使われます。またはローカルプログラムセットのインターフェースを呼び出すためには、このクラスを使う前に、まず一例化します。；этот класс часто используется для удаленного доступа к определенному адресу, или для вызова интерфейса к локальному набору программ, прежде чем использовать этот класс, необходимо сначала сделать один пример）：
 ```csharp
 RemoteCaller router = RemoteCaller.CreateInstance();
 ```
